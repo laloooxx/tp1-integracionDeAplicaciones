@@ -27,7 +27,8 @@ class Server {
         this.app.use('/api/cursos', require('./../routes/cursosRoute'));
         this.app.use('/api/estudiantes_cursos', require('./../routes/estudiantes_cursos_route'));
         //aca creamos una ruta extra para un comando q no sabia como ponerlo
-        this.app.use('/api/estudiantes_cursos/curso', require('./../routes/rutaAlterna'))
+        this.app.use('/api/estudiantes_cursos/curso', require('./../routes/rutaAlterna'));
+        this.app.use('/api/users', require('.././routes/usuariosRoute'));
     }
 
     listen() {

@@ -7,6 +7,11 @@ exports.obtenerEstudiantes = async () => {
     return rows;
 };
 
+
+exports.buscarEstudiante = async () => {
+    const [rows, fields] = await db.execute()
+};
+
 //con este metodo buscamos un solo usuario filtrandolo x su id, su parametro seria el id
 exports.obtenerEstudiantesPorId = async (id) => {
     const [rows, fields] = await db.execute('SELECT * FROM estudiantes WHERE id = ?', [id])

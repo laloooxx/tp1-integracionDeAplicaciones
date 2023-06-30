@@ -1,4 +1,6 @@
 const estudiantesModels = require('../models/estudiantesModels');
+const bcrypt = require('bcryptjs');
+
 
 
 exports.getEstudiantes = async (req, res) => {
